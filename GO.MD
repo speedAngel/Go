@@ -1,24 +1,33 @@
+开发环境介绍：
+
+软件安装
+
+- go1.12.5.windows-amd64.msi
+- goland-2019.1.3.exe
+- JetBrains.GoLand.2019_jb51.rar
+
+
+		C:\Users\Administrator>go version
+		go version go1.12.5 windows/amd64
+
+
 一个GO工程中主要包含以下三个目录：
 
 - src：源代码文件
-
 - pkg：包文件
-
 - bin：相关bin文件
 
 ## 项目构建 ##
-1. 建立工程文件夹 MagicCoin
-2. 在工程文件夹中建立src,pkg,bin文件夹
-3. 在File->Setting->Go->GOPATH>projiect中添加MagicCoin路径
-4. 程序的代码都是放在src目录下，可以对自己的代码进行分包管理
-5. go语言必须有一个文件的包名为package main的go文件作为程序的入口
+	1. 建立工程文件夹 MagicCoin
+	2. 在工程文件夹中建立src,pkg,bin文件夹
+	3. 在File->Setting->Go->GOPATH>projiect中添加MagicCoin路径
+	4. 程序的代码都是放在src目录下，可以对自己的代码进行分包管理
+	5. go语言必须有一个文件的包名为package main的go文件作为程序的入口
 
 ## 编译打包： ##
 
 -  go build coin
-
 -  go test coin
-
 -  go install coin
 
 
@@ -78,8 +87,7 @@ C:\Go\bin>coin addBlock -data "第一个区块"
 
 ## 说明 ##
 
-
-- Nonce是共识算法，也就挖矿产生的证明工作量的 数值，此数值一个有效区块的唯一值
-
-
-- Height是区块在链中的索引
+	
+	- Nonce是共识算法，也就挖矿产生的证明工作量的 数值，此数值一个有效区块的唯一值	
+	
+	- Height是区块在链中的索引
